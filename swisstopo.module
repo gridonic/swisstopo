@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * @file
+ * Contains the swisstopo.module file.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function swisstopo_theme() {
+  return [
+    'swisstopo_map' => [
+      'variables' => [
+        'x' => NULL,
+        'y' => NULL,
+        'zoom' => NULL,
+      ],
+    ],
+    'swisstopo_raw' => [
+      'variables' => [
+        'x' => NULL,
+        'y' => NULL,
+      ],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_preprocess_field().
+ */
+function swisstopo_preprocess_field(&$variables) {
+  if (isset($variables['element']['#field_type']) && $variables['element']['#field_type'] === 'field_swisstopo') {
+    $variables['#attached']['library'][] = 'swisstopo/api';
+    $variables['#attached']['library'][] = 'swisstopo/default';
+    $variables['#attached']['drupalSettings']['markerimage'] = '/' . drupal_get_path('module', 'swisstopo') . '/assets/images/marker.png';
+  }
+}
