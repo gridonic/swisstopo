@@ -8,10 +8,14 @@
 The module provides to add a mapbox with the swisstopo map.
 
 Zoom 500 of Bern
-<img src="./screenshots/mapbox_bern_z500.png" style="max-width: 300px;">
+<p align="center">
+  <img src="./screenshots/mapbox_bern_z500.png" width="250">
+</p>
 
 Zoom 1 of Wädenswil
-<img src="./screenshots/mapbox_waedenswil_z1.png" style="max-width: 300px;">
+<p align="center">
+  <img src="./screenshots/mapbox_waedenswil_z1.png" width="250">
+</p>
 
 ## Map-Field
 
@@ -19,7 +23,9 @@ The module provides a new field for setting the X- and Y-Coordinates in the
 swissgrid format: `2 600 000 / 1 200 000`. Also you can choose the zoom-level
 to define which zoom the mapbox will have.
 
-<img src="./screenshots/backend_field.png" style="max-width: 300px;">
+<p align="center">
+  <img src="./screenshots/backend_field.png" width="250">
+</p>
 
 ## Installation
 
