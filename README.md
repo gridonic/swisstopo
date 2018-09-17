@@ -7,11 +7,11 @@
 
 The module provides to add a mapbox with the swisstopo map.
 
-Zoom 500 of Bern:
-![Mapbox Bern, Zoom 500](screenshots/mapbox_bern_z500.png)
+Zoom 500 of Bern
+<img src="./screenshots/mapbox_bern_z500.png" style="max-width: 300px;">
 
-Zoom 1 of Wädenswil:
-![Mapbox Wädenswil, Zoom 1](screenshots/mapbox_waedenswil_z1.png)
+Zoom 1 of Wädenswil
+<img src="./screenshots/mapbox_waedenswil_z1.png" style="max-width: 300px;">
 
 ## Map-Field
 
@@ -19,7 +19,7 @@ The module provides a new field for setting the X- and Y-Coordinates in the
 swissgrid format: `2 600 000 / 1 200 000`. Also you can choose the zoom-level
 to define which zoom the mapbox will have.
 
-![map field](screenshots/backend_field.png)
+<img src="./screenshots/backend_field.png" style="max-width: 300px;">
 
 ## Installation
 
@@ -60,7 +60,9 @@ Renders a map-box
 #### Licence
 The Map-Api of swisstopo is free to use for non-commercial projects.
 
-**You have to register your website at [admin.ch](https://www.geo.admin.ch/de/geo-services/geo-services/portrayal-services-web-mapping/programming-interface-api/order_form.html) to use the API of swisstopo**:
+**You have to register your website at
+[admin.ch](https://www.geo.admin.ch/de/geo-services/geo-services/portrayal-services-web-mapping/programming-interface-api/order_form.html)
+to use the API of swisstopo:**
 [Registration](https://www.geo.admin.ch/de/geo-services/geo-services/portrayal-services-web-mapping/programming-interface-api/order_form.html)
 
 This module is GPL-2.0+

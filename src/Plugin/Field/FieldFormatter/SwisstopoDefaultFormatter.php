@@ -16,7 +16,7 @@ use Drupal\swisstopo\SwisstopoService;
  * @FieldFormatter(
  *   id = "swisstopo_formatter",
  *   module = "swisstopo",
- *   label = @Translation("swisstopo Default Output"),
+ *   label = @Translation("Swisstopo Default Output"),
  *   field_types = {
  *     "field_swisstopo"
  *   }
@@ -138,6 +138,7 @@ class SwisstopoDefaultFormatter extends FormatterBase implements ContainerFactor
       '#options' => $this->formatOptions(),
       '#required' => TRUE,
     ];
+
     return $elements;
   }
 
@@ -160,11 +161,13 @@ class SwisstopoDefaultFormatter extends FormatterBase implements ContainerFactor
       $x = $item->x;
       $y = $item->y;
       $zoom = $item->zoom;
+      $marker = $item->getMarker();
 
       $output = [
         '#x' => $x,
         '#y' => $y,
         '#zoom' => $this->swisstopoService->getZoomFromStorage($zoom),
+        '#marker' => $marker,
         '#theme' => 'swisstopo_map',
       ];
 

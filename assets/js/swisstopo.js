@@ -10,6 +10,9 @@
         let x = $map.data('swisstopo-x').toString();
         let y = $map.data('swisstopo-y').toString();
         const zoom = $map.data('swisstopo-zoom');
+        const markerUrl = $map.data('swisstopo-marker');
+
+        console.log(markerUrl);
 
         // Swisstopo does not support it's own 7-digit system...
         if (x.length > 6) {
@@ -49,7 +52,7 @@
                     anchor: [0.575, 1],
                     anchorXUnits: 'fraction',
                     anchorYUnits: 'fraction',
-                    src: drupalSettings.markerimage
+                    src: markerUrl
                 })
             })
         });
